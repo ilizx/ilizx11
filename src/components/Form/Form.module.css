@@ -1,0 +1,159 @@
+.correct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct img{
+    width: 50px;
+    height: 50px;
+}
+
+.success{
+    color: black;
+    justify-self: center;
+    padding: 3vw;
+    text-align: center;
+}
+
+form{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    padding-top: .3vw;
+    max-height: 550px;
+    
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form h2{
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+form label{
+    font-size: 1.5vw;
+}
+
+form input{
+    height: 3vw;
+    padding-left: 0.8vw;
+    border-radius: 5px;
+    border: 1px solid rgba(212, 120, 222, 1);
+    font-size: 1vw;
+    font-family: Manrope;
+    background-color: white;
+    color: black;
+}
+
+.messageInput{
+    height: 6vw;
+    padding-top: 0;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(212, 120, 222, 1);
+    min-height: 100px;
+    color: black;
+    font-size: 1vw;
+    padding-left: 0.8vw;
+    padding-top: 0.8vw;
+}
+
+.checkboxWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.image{
+    width: 30vw;
+}
+
+.send{
+    border: 1px solid rgba(212, 120, 222, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3vw;
+    padding: .5vw;
+    font-size: 1vw;
+    font-family: Manrope;
+    color: black;
+    background-color: white;
+    min-height: 50px;
+}
+
+.CheckLabel{
+    font-size: 1vw;
+}
+
+.send:hover{
+    border-color: black;
+}
+
+.error{
+    color: red;
+}
+
+@media (max-width: 560px){
+    form h2{
+        font-size: 18px;
+    }
+
+    form{
+        overflow-x: hidden;
+        height: 100%;
+        z-index: 6 !important;
+        overflow-y: hidden;
+        position: absolute;
+        padding-bottom: 100px;
+    }
+    form input{
+        height: 50px;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    form label{
+        font-size: 16px;
+    }
+    .messageInput{
+        font-size: 16px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    .send{
+        height: 50px;
+        font-size: 16px;
+        border-radius: 6px;
+        height: 50px;
+        z-index: 2;
+    }
+    .formWrapper{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 840px){
+    .send{
+        font-size: 15px;
+    }
+
+    form{
+        margin: 0 auto;
+    }
+
+    .CheckLabel{
+        font-size: 15px;
+    }
+}
